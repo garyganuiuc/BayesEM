@@ -24,7 +24,7 @@ Q(Theta, tau, alpha, beta,  a0, b0, v0, v1, p, P, sigma2, id)
 %%     ~~Describe \code{tau} here~~
 }
   \item{alpha, beta}{
-  	An hyperparamter of the Exponential Prior on tau
+  	Hyperparamter of the Gamma Prior on tau
 %%     ~~Describe \code{lambda} here~~
 }
   \item{a0}{

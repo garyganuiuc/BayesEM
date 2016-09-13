@@ -35,7 +35,7 @@ EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
 %%     ~~Describe \code{b0} here~~
 }
   \item{alpha, beta}{
-  	An hyperparameter of the Exponentional Prior on tau
+  	Hyperparameters of the Gamma Prior on tau
 %%     ~~Describe \code{lambda} here~~
 }
   \item{v0}{
