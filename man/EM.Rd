@@ -1,16 +1,15 @@
-\name{EM}
-\alias{EM}
+\name{Simp_EM}
+\alias{Simp_EM}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	Bayesian EM algorithm for the Sparsity learning in GGMs
+	A simplified and faster version of Bayesian EM algorithm for the Sparsity learning in GGMs
 %%  ~~function to do ... ~~
 }
 \description{
-	Test
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
+Simp_EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,15 +26,15 @@ EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
 %%     ~~Describe \code{p_n} here~~
 }
   \item{a0}{
-  	An hyperparameter of the Beta Prior 
+  	Hyperparameter on the Beta Prior
 %%     ~~Describe \code{a0} here~~
 }
   \item{b0}{
-  	An hyperparameter of the Beta Prior
+  	Hyperparameter on the Beta Prior
 %%     ~~Describe \code{b0} here~~
 }
   \item{alpha, beta}{
-  	Hyperparameters of the Gamma Prior on tau
+  	Hyperparameters on the Gamma Prior of tau
 %%     ~~Describe \code{lambda} here~~
 }
   \item{v0}{
@@ -51,11 +50,11 @@ EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
 %%     ~~Describe \code{maxiter} here~~
 }
   \item{w}{
-  	An hyperparameter of the Inverse Gamma Prior
+  	Hyperparameter on the Inverse Gamma Prior
 %%     ~~Describe \code{w} here~~
 }
   \item{l}{
-  	An hyperparameter of the Inverse Gamma Prior
+  	Hyperparameter on the Inverse Gamma Prior
 %%     ~~Describe \code{l} here~~
 }
 }
@@ -68,11 +67,4 @@ EM(S, n, p_n, a0, b0,alpha, beta, v0, v1, maxiter, w, l)
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-}
-\references{
-%% ~put references to the literature/web site here ~
-}
-\author{
-	Lingrui Gan
-%%  ~~who you are~~
 }

@@ -21,29 +21,22 @@ S<-cov(Y)
 ####Hyperparameters
 ```{r}
 a0=1
-b0=p_n
-alpha=1000
-beta=10
-alpha1=1
-beta1=100
-v0=1
-v1=5
-v11=5
-w=1
-l=1
+b0=1
+alpha=1
+beta=100
+
+  
+v0=0.1
+v1=0.5
 
 maxiter=30
-maxiter1=30
+Ra=3000
 ```
 ####Implement BayesEM Algorithm for the Sparse Learning
 ```{r}
-result<-EM(S,n,p_n,a0,b0,alpha1,beta1,v0,v11,maxiter1,w,l) #full
+result<-EM(S,n,p_n,a0,b0,alpha,beta,v0,v1,maxiter,w,l,Ra)
 ```
 
-####Implement Simplified BayesEM Algorithm for the Sparse Learning
-```{r}
-result<-EM1(S,n,p_n,a0,b0,alpha,beta,v0,v1,maxiter,w,l) #simplified version
-```
 
 ####Outputs 
 #####The marginal posterior probability matrix of each entries
