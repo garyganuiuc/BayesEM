@@ -10,6 +10,10 @@
 }
 \details{
 
+The DESCRIPTION file:
+\packageDESCRIPTION{BayesEM}
+\packageIndices{BayesEM}
+
 }
 \author{
 \packageAuthor{BayesEM}
@@ -17,5 +21,8 @@
 Maintainer: \packageMaintainer{BayesEM}
 }
 \references{
-~~ Literature or other references for background information ~~
+	Submitted Manuscript 
 }
+
+\keyword{ package }
+

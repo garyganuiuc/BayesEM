@@ -23,14 +23,21 @@ S<-cov(Y)
 a0=1
 b0=1
 alpha=1
-beta=100
+beta=c(1,50,100)
 
   
 v0=0.1
-v1=0.5
+v1=c(0.3,0.4,0.5)
 
-maxiter=30
+maxiter=100
 Ra=3000
+```
+#### Tune the parameters
+```{r}
+Tune=Tune_EMLasso(S,n,p_n,a0,b0,alpha,beta,v0,maxiter,w,l,Ra)
+Ra=Tune$Ra
+v1=Tune$v1
+beta=Tune$beta
 ```
 ####Implement BayesEM Algorithm for the Sparse Learning
 ```{r}

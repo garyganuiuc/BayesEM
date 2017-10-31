@@ -1,10 +1,10 @@
 Package: BayesEM
 Type: Package
 Title: Bayesian EM algorithms for Learning the Sparsity of Gaussian Graphical Models
-Version: 1.0
+Version: 2.0
 Date: 2016-08-28
 Author: Lingrui(Gary) Gan
 Maintainer: Lingrui Gan <lgan6@illinois.edu>
-Description: Two Bayesian EM algorithms for learning the sparsity pattern,introducing by the spike and slab normal prior, for the GGMs
+Description: A Bayesian EM algorithms for learning the sparsity pattern,introducing by the spike and slab normal prior, for the GGMs
 License: GPL(>=2)
 Depends: stats,MASS 

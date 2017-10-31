@@ -1,6 +1,5 @@
-
-###EM function######
-EM<-function(S,n,p_n,alpha,beta,v0,v1,maxiter,Ra){
+EM <-
+function(S,n,p_n,alpha,beta,v0,v1,maxiter,Ra){
   count=0
   Q3=NULL
   KL1=NULL
@@ -125,7 +124,3 @@ EM<-function(S,n,p_n,alpha,beta,v0,v1,maxiter,Ra){
   P=1/(1+sqrt(v1/v0)*exp(-Theta^2/(2*v0*sigma2)+Theta^2/(2*v1*sigma2))*(1-p)/p)
   return(list(Theta=Theta,P=P,Q=Q2,tau=tau,p=p,W=W,sigma2=sigma2))
 }
-
-
-
-
