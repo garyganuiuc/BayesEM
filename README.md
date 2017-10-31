@@ -18,7 +18,9 @@ S<-cov(Y)
 ```
 
 ###Learning the Sparse Structure From BayesEM Algorithms
+
 ####Hyperparameters
+
 ```{r}
 a0=1
 b0=1
@@ -32,14 +34,18 @@ v1=c(0.3,0.4,0.5)
 maxiter=100
 Ra=3000
 ```
+
 #### Tune the parameters
+
 ```{r}
 Tune=Tune_EMLasso(S,n,p_n,a0,b0,alpha,beta,v0,maxiter,w,l,Ra)
 Ra=Tune$Ra
 v1=Tune$v1
 beta=Tune$beta
 ```
+
 ####Implement BayesEM Algorithm for the Sparse Learning
+
 ```{r}
 result<-EM(S,n,p_n,a0,b0,alpha,beta,v0,v1,maxiter,w,l,Ra)
 ```
@@ -47,12 +53,17 @@ result<-EM(S,n,p_n,a0,b0,alpha,beta,v0,v1,maxiter,w,l,Ra)
 
 ####Outputs 
 #####The marginal posterior probability matrix of each entries
+
 ```{r}
 result$P
 ```
+
 #####The MAP estimate of the precision matrix 
+
 ```{r}
 result$Theta
 ```
+
 ##Reference
+
 Manuscript  
